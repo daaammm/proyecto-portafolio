@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* General */
+
+element.style {
+    width: 667px;
+}
+{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+/* Textos */
+html,
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+h1 {
+	font-size: 1.8rem;
+	text-align: center;
+	font-weight: 500;
+	padding-bottom: 10px;
+    border: 0px;
+}
+
+h2 {
+	font-size: 1.8rem;
+	text-align: center;
+	font-weight: 500;
+	padding-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+h4 {
+	font-size: 1.3rem;
+	padding-bottom: 20px;
+	font-weight: 500;
+    text-align: center;
+}
+
+p {
+	font-size: 1.5rem;
+	margin: 0px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Formato */
+.container {
+	margin: auto;
+	max-width: 1300px;
+	overflow: auto;
+	padding: 0 20px;
+}
+
+.large {
+	font-size: 30px;
+}
+
+.btn {
+	display: block;
+	font-size: 15px;
+	padding: 15px 40px;
+	letter-spacing: 1px;
+}
+
+.btn-outline {
+	background: transparent;
+	border: 1px solid rgb(167, 164, 164);
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.btn-outline:hover {
+	background: #fff;
+	color: #000;
+}
+
+/* Navbar*******************************************************
+**************************************************************** */
+#navbar {
+	overflow: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+    font-size: 22px;
+}
+
+#navbar a {
+	color: #000;
+}
+
+#navbar .logo {
+	float: left;
+	padding-top: 12px;
+}
+
+#navbar img {
+	height: 40px;
+}
+
+#navbar ul {
+	list-style: none;
+	float: right;
+}
+
+#navbar ul li {
+	float: left;
+}
+
+#navbar ul li a {
+	display: block;
+	padding: 20px;
+	text-align: center;
+}
+
+#navbar ul li a:hover {
+	color: #318d8d;
+}
+
+
+
+/* Presentación ***********************************************
+***************************************************************/
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+.presentacion-name {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #d359ae;
+    text-align: center;
+  }
+  
+  
+  .presentacion-section {
+    min-height: calc(100vh - 90px);
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  
+  .presentacion-saludo {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .saludo-img {
+    max-width: 500px;
+  }
+  
+  @media (max-width: 100px) {
+    .main-content {
+      flex-direction: column;
+    }
+    .presentacion-saludo {
+    align-items: center;
+    text-align: center;
+    }
+    .saludo-img {
+      margin-top: 30px;
+    }
+  }
+
+
+/* Habilidades**************************************************
+************************************************************** */
+#habilidades {
+   
+    grid-auto-flow: column;
+    position: center;
+    z-index: 0;
+    background-color: #aec4c0;
+    color: rgb(12, 10, 10);
+	padding: 20px 0;
+}
+
+.Habilidades-row {
+	display: flex;
+    justify-content: center;
+}
+
+.habilidades-row img {
+	width: 100%;
+}
+
+
+
+/** PROYECTOS ************************************************
+**************************************************************/
+.proyectos {
+	padding: 80px 0;
+	text-align: center;
+}
+
+.proyectos p {
+	width: 500px;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 50px;
+    text-align: center
+}
+
+.proyectos-row {
+    display: flex;
+    justify-content: center;
+	
+}
+
+.proyectos-row img {
+	width: 25%;
+	padding: 7px;
+	border-radius: 10px;
+}
+
+/* CITA******************************************************
+************************************************************ */
+.quote-section {
+    background-color: #463445;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    max-width: 800px;
+    display: white;
+    margin: 0%;
+    }
+
+.column-content{
+    position: relative;
+}
+
+.quote-section {
+    display: flex;
+    justify-content: center;
+    padding: 5px 283px 30px;
+    text-align: center;
+}
+
+
+/*CONTACTO**************************************************
+************************************************************/
+
+#contact {
+	padding: 80px 0;
+}
+
+#contact h2 {
+    padding: 5px;
+	text-align: center;
+}
+
+#contact p {
+	width: 500px;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.contact-row {
+	display: flex;
+	padding-left: 250px;
+    padding-right: 250px;
+}
+
+*.contact-row-img {
+    padding-left: 50px;
+    padding-right: 100px; ;
+	width: 50%;
+}*
+
+
+.contact-row-form {
+	width: 50%;
+	border-top-width: 5px solid #912491;
+	border-radius: 10px;
+	padding: 100px;
+}
+
+.contact-row-form h3 {
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+.contact-row-form button {
+	width: 100%;
+    text-align: center;
+}
+
+
+
+
+/*Pie de pagina*/
+
+.footer {
+    background-color: #e4bde7;;
+    grid-auto-flow: column;
+    position: center;
+    z-index: 0;
+}
+
+.container {
+    max-width: 1024px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+footer {
+    display: block;
+}
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: color rgb(165, 153, 153);
+    font-size: 18px;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+
+
